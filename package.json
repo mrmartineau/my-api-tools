@@ -1,0 +1,24 @@
+{
+  "name": "zander-api-tools",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "events": "^3.3.0",
+    "fast-xml-parser": "^5.0.9",
+    "hono": "^4.7.5"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^0.1.15",
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "@types/xml2js": "^0.4.14",
+    "vite": "^6.1.1",
+    "vite-plugin-ssr-hot-reload": "^0.2.2",
+    "vitest": "^3.0.9",
+    "wrangler": "^4.4.0"
+  }
+}

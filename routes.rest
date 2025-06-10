@@ -1,0 +1,25 @@
+# This file can be used to test the API locally in conjunction with the REST Client VS Code extension.
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+# Variables
+@base_url = {{$dotenv ZM_API}}
+
+
+# Root
+GET {{base_url}}/
+
+###
+
+# Get a letterboxd user's feed
+GET {{base_url}}/letterboxd/mrmartineau
+
+###
+
+# Convert RSS feed to JSON
+GET {{base_url}}/rss?feed=https://letterboxd.com/mrmartineau/rss/
+
+
+###
+
+# 404
+GET {{base_url}}/rs
